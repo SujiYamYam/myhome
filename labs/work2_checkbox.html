@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>체크박스연습</title>
+</head>
+<body>
+<h1>선택형 항목 만들기</h1>
+<hr>
+<form name="check" action="{%url'choice'%}">
+    <p>디저트:
+    <label><input type="radio" name="dessert" id="d1" value="coffee">커피</label>
+    <input type="radio" name="dessert" id="d2" value="juice"><label for="d2">쥬스</label>
+    <label><input type="radio" name="desser" id="d3 value=icecream">아이스크림</label>
+    </p>
+
+    <p>보유 기술:
+    <input type="checkbox" name="skill" id="sk1" value="python"><label for="sk1">파이썬</label>
+    <input type="checkbox" name="skill" id="sk2" value="C/C"><label for="sk2">C/C</label>
+    <input type="checkbox" name="skill" id="sk3" value="Web" checked><label for="sk3">Web programming</label>
+    </p>
+
+</form>
+
+</body>
+</html>

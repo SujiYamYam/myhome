@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>선택자</title>
+    <style>
+        a:link, a:visited{
+            text-decoration: none;
+        }
+
+        a:hover{
+            background-color: pink;
+            font-weight: bold;
+        }
+
+        h3::first-letter{
+            color:red;
+            font-size: x-large;
+        }
+
+        .heading{
+            font-size: 15px;
+
+            font-weight: bold;
+        }
+
+        #warnings{
+            padding: 20px;
+            padding-bottom: 0px;
+            font-size:30px;
+            color:olive;
+            font-weight: lighter;
+        }
+
+        #w_cnts{
+            font-size: 15px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<h3 class="heading">Web Programming</h3>
+
+<div>
+    <p class="heading">주요 학습 내용</p>
+    <ul>
+        <li> <a href = "/labs/work1.html">HTML5</a>  </li>
+    </ul>
+</div>
+
+<div id = "warnings">
+    <p class = "heading">주의 사항</p>
+    <ul id = "w_cnts">
+        <li>마감기한이 지나면 과제제출 차단</li>
+    </ul>
+</div>
+
+</body>
+</html>

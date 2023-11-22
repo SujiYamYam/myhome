@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>선택형 연습</title>
+</head>
+<body>
+<h3>피자 예약 주문</h3>
+<hr>
+<form name="reservation" action="{%url 'reservation'%}">
+    <p>피자:
+    <select name="pizza">
+        <option value="1"selected>고구마피자</option>
+        <option value="2">치즈피자</option>
+        <option value="3">쉬림프피자</option>
+    </select></p>
+    <p>
+        <label for="count">갯 수:</label>
+        <input type=number name="count" id="count" min="1" max="10" value="1" step="1">개
+    </p>
+    <p>
+        <label for="time">픽업 시간:</label>
+        <input type="datetime-local" name="time" id="time">
+    </p>
+    <p>
+        <input type="submit" value="주문">
+    </p>
+</form>
+
+</body>
+</html>
